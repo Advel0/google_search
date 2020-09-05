@@ -1,0 +1,173 @@
+html{
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  height:100%;
+  margin:0;
+}
+
+#container{
+  height:100%;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr 1.5fr;
+}
+
+
+#search{
+  display:flex;
+  flex-direction: column;
+}
+menu{
+  width:100%;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  align-items: center;
+  height:60px;
+}
+menu img{
+
+  margin-left: 20px;
+}
+menu a{
+  font-size:13px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 20px;
+  color:#212121;
+  text-decoration: none;
+}
+menu a:hover{
+  color:grey;
+  text-decoration: underline;
+}
+#footer{
+  display:flex;
+  align-items: flex-end;
+  width:100%;
+}
+form{
+  display:flex;
+  margin-left: 45px;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+
+}
+
+
+footer{
+  display:flex;
+  width:100%;
+  background-color: #F2F2F2;
+  min-height: 60px;
+  border-top: 1px solid #E4E4E4;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color:#676767
+}
+footer span{
+  margin-bottom:15px;
+  margin-right: 10px;
+}
+
+#input_area{
+  display:flex;
+  flex-direction: column;
+  font-size:13px;
+}
+#overviews{
+  display:flex;
+  flex-direction: column;
+  font-size:13px;
+  flex-grow: 1fr;
+  margin-right:20px;
+}
+.i_name{
+  height:30px;
+}
+#input_area [type=submit]{
+  align-self: flex-end;
+  color:white;
+  background-color: #4C8EFB;
+  border: 1px solid #0F56FB;
+  border-radius:2px;
+  width:120px;
+  height:30px;
+  font-size:11px;
+  font-weight:bold;
+}
+#descriptions{
+  color:#707070;
+  font-size:11px;
+  display:flex;
+  flex-direction: column;
+}
+p{
+  margin: 10px;
+  margin-top: 5px;
+  margin-left: 0
+}
+#input_area p{
+  height:30px
+}
+#descriptions p{
+  height:30px;
+}
+
+#highlight{
+  color:#D93025;
+  font-size:20px;
+  margin:25px;
+  margin-left: 45px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100;
+  background-color:#FFFF00;
+  height: 1px;
+}
+#line{
+  border:0.5px solid #EBEBEB;
+  margin-bottom:45px;
+}
+.input input{
+  height:29px;
+  width:572px;
+  border: 1px solid #C0C0C0;
+
+}
+.input input:focus{
+  outline:none;
+  border: 1px solid #007CD5;
+}
+@media(min-width:630px){
+
+}
+@media(max-width:920px){
+  #descriptions{
+    transform: scale(0);
+    width:0;
+  }
+
+}
+@media(max-width:740px){
+  #input_area input{
+    width:100%;
+  }
+  #input_area{
+    width:75%;
+  }
+}

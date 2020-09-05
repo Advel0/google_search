@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images</title>
+        <link rel='stylesheet ' href='static/style/images_search.css' type='text/css'/>
+        <meta name='viewport' content='width=device-width'>
+    </head>
+    <body>
+        <div id='container'>
+          <menu>
+            <a href='index.html'>Home</a>
+          </menu>
+
+          <div id='google_search'>
+              <div id='logo_holder'>
+                <img id=logo src='static/images/google_search_logo.png' height=92 width="272">
+                <span id='text'>images</span>
+              </div>
+              <form action="https://www.google.com/search">
+                <div id='search-wrapper'>
+                  <svg height=44 width=40>
+                    <circle cy=22 cx=20 r=4 stroke='#9AA0A6' stroke-width=1.5 fill=none />
+                    <line x1=24 y1=26 x2=28 y2=30 stroke=#9AA0A6 stroke-width=1.5 />
+                    <line x1=23 y1=25 x2=26 y2=28 stroke=#9AA0A6 stroke-width=1>
+                  </svg>
+                    <input type="hidden" name="tbm" value="isch" />
+                    <input type="text" name="q" id='search_i'>
+                  <svg width=55 height=44>
+                    <circle cy=20 cx=15 r=6 stroke='#4285F4' stroke-width=1.8 fill=none />
+                    <line x1=19 y1=24 x2=21.5 y2=26.5 stroke='#4285F4' stroke-width=1.2 />
+                    <line x1=20.5 y1=25.5 x2=25 y2=30 stroke='#4285F4' stroke-width=1.8 />
+                  </svg>
+                </div>
+<!--                   <circle cy=20 cx=15 r=6 stroke='#4285F4' stroke-width=1.8 fill=none>-->
+              </form>
+          </div>
+          <div id='footer'>
+            <footer>
+              <span>
+                Made by Advel
+              </span>
+            </footer>
+          </div>
+        </div>
+    </body>
+</html>

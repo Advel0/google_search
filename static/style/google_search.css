@@ -1,0 +1,150 @@
+html{
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  height:100%;
+  margin:0;
+}
+
+#container{
+  height:100%;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr 1.5fr;
+}
+
+
+menu{
+
+  margin:0;
+  display:flex;
+  justify-content: flex-end;
+
+}
+menu a{
+  font-size:13px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 20px;
+  color:#212121;
+  text-decoration: none;
+}
+menu a:hover{
+  color:grey;
+  text-decoration: underline;
+}
+#footer{
+  display:flex;
+  align-items: flex-end;
+  width:100%;
+}
+
+#logo{
+  align-self:center;
+  margin-bottom: 25px;
+}
+
+#google_search{
+  justify-self: center;
+  align-self: center;
+  display:flex;
+  flex-direction: column;
+
+}
+#google_search input{
+  height:44px;
+  background-color:none !important;
+
+}
+
+#google_search input:-webkit-autofill,
+#google_search input:-webkit-autofill:hover,
+#google_search input:-webkit-autofill:focus,
+#google_search input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+
+}
+#search-wrapper{
+
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  border:1px solid #E2E4E7;
+  border-radius:25px;
+}
+#search_i{
+    background: none;
+  width:100%;
+  border:none;
+}
+#search_b{
+  display: flex;
+  justify-content:center;
+  padding-top:2%;
+
+}
+.s_button{
+  border:0;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  color:#5F6368;
+
+
+  font-size: 14px;
+  height: 36px !important;
+  width:142px;
+}
+.s_button:hover{
+  border:1px solid #9AA0A6;
+  color:black;
+}
+[type='text']:focus{
+  outline: 0;
+
+}
+#search-wrapper:hover{
+    box-shadow: 0px 0px 5px 2px lightgrey;
+
+
+}
+
+.s_button:active {
+  border:1px solid #007CD5;
+  outline:none;
+}
+.s_button:focus {
+  border:1px solid #007CD5;
+  outline:none;
+
+}
+
+footer{
+  display:flex;
+  width:100%;
+  background-color: #F2F2F2;
+  min-height: 60px;
+  border-top: 1px solid #E4E4E4;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color:#676767
+}
+footer span{
+  margin-bottom:15px;
+  margin:1
+}
+
+span{
+  margin:10px;
+}
+
+@media(min-width:630px){
+  #google_search{
+    width:582px
+  }
+}
+@media(max-width:629px){
+  #google_search{
+    width: 84%;
+  }
+}

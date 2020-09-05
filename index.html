@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <link rel='stylesheet ' href='static/style/google_search.css' type='text/css'/>
+        <meta name='viewport' content='width=device-width'>
+    </head>
+    <body>
+        <div id='container'>
+          <menu>
+            <a href='google_image_search.html'>Images Search</a>
+            <a href='advanced_search.html'>Google Advanced Search</a>
+          </menu>
+
+          <div id='google_search'>
+              <img id=logo src='static/images/google_search_logo.png' height=92 width="272">
+              <form action="https://google.com/search">
+              <div id='search-wrapper'>
+                <svg height=44 width=40>
+                  <circle cy=22 cx=20 r=4 stroke='#9AA0A6' stroke-width=1.5 fill=none />
+                  <line x1=24 y1=26 x2=28 y2=30 stroke=#9AA0A6 stroke-width=1.5 />
+                  <line x1=23 y1=25 x2=26 y2=28 stroke=#9AA0A6 stroke-width=1>
+                </svg>
+                  <input type="text" name="q" id='search_i'>
+              </div>
+                <div id='search_b'>
+                  <span><input class='s_button' type='submit' value='Google Search'></span>
+                  <span><input class='s_button' type="submit" name="btnI" value="I'm Feeling Lucky"></span>
+                </div>
+              </form>
+          </div>
+          <div id='footer'>
+            <footer>
+              <span>
+                Made by Advel
+              </span>
+            </footer>
+          </div>
+        </div>
+    </body>
+</html>
